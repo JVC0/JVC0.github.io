@@ -1,0 +1,19 @@
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1px 1px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    
+    
+}
+.back2{
+    width: 200px;
+    
+}
+.back2:hover{
+    transition: transform .5s ease;
+    transform: translateX(-10px);
+}
