@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link rel="stylesheet" href="./Style/lol.css">
+    <link rel="shortcut icon" href="/img/lol.png">
+</head>
+<body>
+    <nav>
+        <button class="back"><a href="./index.html"><img class="back2" src="/img/back.png" alt=""></a></button>
+        <div class="audiol">
+            <audio controls autoplay>
+                <source src="/Sound/Welcome to Summoner's Rift.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn-icons-png.flaticon.com/512/55/55008.png" alt="" class="topbtn"></button>
+    </nav>
+    <header>
+        <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/8/86/League_of_legends_logo_transparent.png" alt="lol" class="imglol">
+    </header>
+    <main>
+        <div class="text1">¿Has jugado League of Legends alguna vez?</div>
+        <div class="imgdiv"><img src="https://signup.leagueoflegends.com/es-es/assets/divider.png" alt="" class="divider"></div>
+
+        <div class="btn">
+            <button class="style-0" onclick="toggleYesSection()">Yes</button>
+        </div>
+        <div class="btn">
+            <button class="style-0" onclick="toggleNoSection()">No</button>
+        </div>
+
+        <section id="yes-section" class="container reveal">
+            <div class="text-container">
+                <div class="text-box">
+                    <h1>Reasons to Quit League of Legends</h1>
+        <ol>
+            <li><strong>Toxic Environment:</strong> League of Legends has gained notoriety for its toxic player base. The in-game chat can be filled with negativity, insults, and harassment, which can take a toll on your mental well-being.</li>
+            <li><strong>Smurf Players:</strong> Smurf accounts (low-level accounts created by experienced players) are prevalent. These players can dominate games, making it frustrating for new or less skilled players.</li>
+            <li><strong>Intentional Feeders:</strong> Riot Games doesn't always take swift action against players who intentionally feed (purposefully dying to sabotage the game). This behavior can ruin matches and lead to frustration.</li>
+            <li><strong>Fixed Winrate:</strong> Some players feel that the game's matchmaking system is rigged, leading to streaks of wins followed by losses. This inconsistency can be disheartening.</li>
+            <li><strong>Ranked Grind:</strong> Climbing the ranked ladder can be challenging and time-consuming. The grind to improve your rank can become exhausting and impact your enjoyment of the game.</li>
+            <li><strong>Lack of Team Communication:</strong> Effective teamwork is crucial in League of Legends, but communication can be lacking, especially in solo queue matches.</li>
+            <li><strong>Stomp or Get Stomped:</strong> Matches often swing dramatically, resulting in either one-sided victories or crushing defeats. This unpredictability can be frustrating for players.</li>
+            <li><strong>Ever-Changing Meta:</strong> Frequent balance changes alter the game's meta (optimal strategies and champion picks). Keeping up with these changes can be overwhelming for some players.</li>
+        </ol>
+        <p>Remember that everyone's experience with League of Legends is different, and some players still find joy in the game. However, if these reasons resonate with you, it might be worth considering whether quitting is the right choice for you. Ultimately, prioritize your well-being and enjoyment when deciding whether to continue playing or take a break.</p>
+                </div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/PkSES7B9IZE?si=cI18lFRxs6qqi0zG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
+        </section>
+
+        <section id="no-section" class="container reveal">
+            <div class="text-container">
+                <div class="text-box">
+                    <p>
+                        <div class="tutorial"><img src="/img/decorator-left.png" alt="">Tutorial <img src="/img/decorator-right.png" alt=""></div>
+                        <h1>League of Legends Basics</h1>
+                        <p>League of Legends (LoL) is a popular multiplayer online battle arena (MOBA) game where two teams of five champions face off to destroy each other's base. Here are the fundamental basics to get you started:</p>
+                        <img src="https://pbs.twimg.com/media/Ee0FsfzX0AAt1CI.png:large" alt="" width="700px">
+                        <h2>Objective</h2>
+                        <p>The ultimate goal is to <strong>destroy the enemy Nexus</strong>, which is the heart of their base. Your team's Nexus is where minions spawn, and behind it lies the Fountain, where you can replenish health, mana, and access the Shop.</p>
+                        <img src="https://content.instructables.com/FON/9OYB/J7S1MHH0/FON9OYBJ7S1MHH0.jpg?auto=webp&frame=1&crop=3:2&width=320&md=2caf87b1f674db36a1f06d22d1080856" alt="" width="700px">
+                        <h2>Map</h2>
+                        <p>The standard map is <strong>Summoner's Rift</strong>. It features three lanes (top, mid, and bot) and a jungle area in between. Each lane has turrets and inhibitors that protect the Nexus.</p>
+                        <img src="https://www.researchgate.net/publication/319839481/figure/fig1/AS:539281729228800@1505586191613/A-Map-of-the-League-of-Legends-game-play-in-the-classic-mode.png" alt="" width="700px">
+                        <h2>Roles and Lanes</h2>
+                        <ul>
+                            <li><strong>Top Lane</strong>: Solo fighters who protect their lane.</li>
+                            <li><strong>Jungle</strong>: Roam the jungle, kill neutral monsters, and help lanes.</li>
+                            <li><strong>Mid Lane</strong>: Burst damage champions who can excel solo or in team fights.</li>
+                            <li><strong>Bot Lane (AD Carry and Support)</strong>: AD Carry deals sustained damage, while Support assists and protects.</li>
+                            <li><strong>Support</strong>: Helps the AD Carry and provides utility for the team.</li>
+                        </ul>
+                        <h2>Champions</h2>
+                        <p>Each player controls a single champion with unique abilities. There are over 140 champions, and you’ll need to learn their playstyles and synergies.</p>
+                        <img src="https://tiermaker.com/images/templates/league-of-legends-champions-always-updacuted-1040762/10407621643842271.png" alt="" width="700px">
+                        <h2>Game Progression</h2>
+                        <ul>
+                            <li>Start at level 1 and gain experience (XP) by killing minions, champions, and neutral monsters.</li>
+                            <li>Earn gold to buy items that enhance your champion’s power.</li>
+                            <li>Destroy turrets and inhibitors to clear the path to the enemy Nexus.</li>
+                        </ul>
+                        <h2>Neutral Monsters</h2>
+                        <ul>
+                            <li><strong>Baron Nashor</strong>: Powerful jungle boss. Killing it grants team-wide bonuses.</li>
+                            <li><strong>Drakes (Dragons)</strong>: Different types provide various buffs.</li>
+                            <img src="https://cdn.oneesports.gg/cdn-data/2023/11/LeagueOfLegends_Baron_OfficialWallpaper.jpg" alt="" width="700px">
+                        <img src="https://cdnportal.mobalytics.gg/production/2022/02/3f1ace09-elemental.png" alt="" width="700px">
+                        </ul>
+                        <h2>Vision Control</h2>
+                        <p>Use wards to reveal areas on the map and prevent surprise attacks. The Fog of War hides enemies outside your vision range.</p>
+                        <img src="https://wecoach.gg/_vercel/image?url=https%3A%2F%2Fapi.wecoach.gg%2Fstorage%2Fuploads%2F87_1695849692.jpg&w=1600&h=900&q=80" alt="" width="700px">
+                        <h2>Three Phases</h2>
+                        <ul>
+                            <li><strong>Early Game</strong>: Focus on farming, laning, and gaining XP.</li>
+                            <li><strong>Mid Game</strong>: Team fights, objectives, and rotations.</li>
+                            <li><strong>Late Game</strong>: High-stakes battles and pushing for victory.</li>
+                        </ul>
+                        <h2>Communication</h2>
+                        <p>Coordinate with your team using pings and chat. Learn League-specific terminology.</p>
+                        <h2>Resources</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tQbo2X2Qysc?si=YpE1fiF8LJEht3-P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                </div>
+                </div>
+                
+                
+        </section>
+
+        <script>
+                function toggleYesSection() {
+    const yesSection = document.getElementById("yes-section");
+    yesSection.classList.toggle("active"); // Assuming you have a CSS class for showing/hiding
+    if (yesSection.classList.contains("active")) {
+        // Scroll to the beginning of the yes section
+        yesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function toggleNoSection() {
+    const noSection = document.getElementById("no-section");
+    noSection.classList.toggle("active"); // Assuming you have a CSS class for showing/hiding
+    if (noSection.classList.contains("active")) {
+        // Scroll to the beginning of the no section
+        noSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+        
+            function reveal() {
+                const reveals = document.querySelectorAll(".reveal");
+                reveals.forEach((element) => {
+                    const revealTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (revealTop < windowHeight) {
+                        element.classList.add("active");
+                    }
+                });
+            }
+            let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+        </script>
+    </main>
+</body>
+</html>
