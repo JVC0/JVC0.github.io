@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Game</title>
+    <link rel="stylesheet" href="Style/style.css?v=1.0" type="text/css"/>
+    <link rel="shortcut icon" href="/img/Controller.png">
+</head>
+<body>  
+    <div class="title">Select a game</div>
+    <a href="/login.html" class="login">Login</a>
+    <div id="menu" class="menu">
+        <!-- Ark Game Section -->
+        <div class="btn-container">
+            <img src="https://ark.wiki.gg/images/thumb/0/0a/ASA_Logo_transparent.png/630px-ASA_Logo_transparent.png" alt="Ark Logo" class="img">
+            <a href="./ark.html" class="btn-link">
+                <button type="button" class="btn">Ark: Survival Ascended</button>
+            </a>
+        </div>
+        <!-- Grand Theft Auto Game Section -->
+        <div class="btn-container">
+            <img src="https://1000logos.net/wp-content/uploads/2022/10/Grand-Theft-Auto-V-logo.png" alt="Grand Theft Auto Logo" class="img">
+            <a href="./GTA.HTML" class="btn-link">
+                <button type="button" class="btn">Grand Theft Auto V</button>
+            </a>
+        </div>
+        <!-- Apex Legends Game Section -->
+        <div class="btn-container">
+            <img src="https://seeklogo.com/images/A/apex-logo-F74B0C9FCD-seeklogo.com.png" alt="Apex Legends Logo" class="img">
+            <a href="./apex.html" class="btn-link">
+                <button type="button" class="btn">Apex Legends</button>
+            </a>
+        </div>
+        <!-- League of Legends Game Section -->
+        <div class="btn-container">
+            <img src="/img/lol.png" alt="League Of Legends" class="img">
+            <a href="./shitgame.html" class="btn-link">
+                <button type="button" class="btn">League Of Legends</button>
+            </a>
+        </div>
+        <!-- Rocket League Game Section -->
+        <div class="btn-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Rocket_League_logo.svg" alt="Rocket_League_logo" class="img">
+            <a href="https://www.rocketleague.com/en" class="btn-link">
+                <button type="button" class="btn">Rocket League</button>
+            </a>
+        </div>
+        
+        
+        <button onclick="scrollDown()" class="up"><img src="/img/up.png" alt="up" class="upimg"></button>
+        <button onclick="scrollUp()" class="down"><img src="/img/down.png" alt="down" class="downimg"></button>
+    </div>
+    <script>
+        var menu = document.getElementById('menu');
+        var btnContainers = Array.from(menu.getElementsByClassName('btn-container'));
+        var visibleCount = 4;
+
+        function updateVisibility() {
+            btnContainers.forEach((container, index) => {
+                if (index < visibleCount) {
+                    container.classList.remove('hidden');
+                } else {
+                    container.classList.add('hidden');
+                }
+            });
+        }
+
+        function scrollUp() {
+            // Move the last item to the beginning
+            btnContainers.unshift(btnContainers.pop());
+            updateOrder();
+        }
+
+        function scrollDown() {
+            // Move the first item to the end
+            btnContainers.push(btnContainers.shift());
+            updateOrder();
+        }
+
+        function updateOrder() {
+            // Remove all btnContainers from the menu
+            btnContainers.forEach(container => {
+                menu.removeChild(container);
+            });
+
+            // Append them back in the new order
+            btnContainers.forEach(container => {
+                menu.insertBefore(container, menu.lastElementChild.previousElementSibling);
+            });
+
+            updateVisibility();
+        }
+
+        // Initial update to set the visibility
+        updateOrder();
+    </script>
+    <img src="/img/Ditto.gif" alt="Ditto" class="ditto" >
+    <img src="/img/panda.gif" alt="panda" class="panda">
+</body>
+</html>
